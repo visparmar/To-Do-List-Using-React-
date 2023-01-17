@@ -1,0 +1,292 @@
+.main::before{
+  content: "";
+  background: url('/public/bg1.jpg');
+  position: absolute;
+  width: 100%;
+  height: 1500px;
+  opacity: 0.8;
+  z-index:-1;
+}
+
+
+.main-container{
+  /* width: 400px; */
+    display: flex;
+    /* position: absolute; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    top: 6rem;
+    right: 40%;
+    /* padding: 1rem 0; */
+    padding-left: 1rem;
+    border-radius: 2rem;
+  /* margin-left: auto; */
+    border: 1px solid white;
+    background-color: aliceblue;
+    opacity: 0.8;
+    
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    /* box-sizing: border-box; */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    /* width: 100%;  */
+    /* background-color: skyblue; */
+    
+}
+.fa-solid{
+    font-size: 20px;
+    padding: 1rem;
+    border-radius: 4rem;
+    
+}
+i:nth-child(3):hover{
+color: red;
+}
+i:nth-child(2):hover{
+    color: greenyellow;
+    }
+.fa-plus:hover{
+    background-color: grey;
+}
+figure{
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  /* align-items: center; */
+}
+#txtbox {
+    font-size: 18pt;
+    height: 42px;
+    width : 350px;
+    border: 1px solid black;
+    padding: 0.2rem;
+}
+#addi{
+  background-color: 1px solid black;
+}
+
+.add-item{
+ 
+    display: flex;
+  width: 400px;
+    
+    background-color: white;
+    
+}
+figcaption{
+    color: white;
+    padding: 1rem 1rem;
+   
+    font-size: 20px;
+    color: black;
+    
+}
+img[alt]{
+  
+    margin-top: 5rem;
+    margin-left: 1rem;
+    height: 200px;
+    width: 200px;
+    
+    
+}
+
+/* button */
+
+.button2 {
+  position: relative;
+  display: inline-block;
+  padding: 20px 41px;
+  border-radius: 4px;
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  margin: 25px;
+  font-family: "Roboto", sans-serif;
+  filter: hue-rotate(0deg);
+  border: 2px solid #d2bdff;
+  transition: all 0.1s linear;
+}
+.button2:hover {
+  border: 1px solid transparent;
+}
+.button2:hover span {
+  position: absolute;
+  display: block;
+}
+.button2:hover span:nth-child(1) {
+  filter: hue-rotate(0deg);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #3a86ff);
+  animation: animate1 1s linear infinite;
+}
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+.button2:hover span:nth-child(2) {
+  filter: hue-rotate(60deg);
+  top: -100%;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #3a86ff);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+  50%, 100% {
+    top: 100%;
+  }
+}
+.button2:hover span:nth-child(3) {
+  filter: hue-rotate(120deg);
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background: linear-gradient(270deg, transparent, #3a86ff);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+@keyframes animate3 {
+  0% {
+    right: -100%;
+    height: 3px;
+  }
+  50%, 100% {
+    height: 2px;
+    right: 100%;
+  }
+}
+.button2:hover span:nth-child(4) {
+  filter: hue-rotate(300deg);
+  bottom: -100%;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #3a86ff);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+  50%, 100% {
+    bottom: 100%;
+  }
+}
+.btn-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.item-fell span{
+    padding: 0.8rem;
+    font-size: 18pt;
+   
+    
+   
+}.fa-pen-to-square{
+    margin-left: auto;
+}
+.list{
+display: flex;
+width: auto;
+margin: 1rem;
+border-radius: 1rem;
+background-color:blue;
+
+}
+@media screen and (max-width: 422px) {
+  .main {
+    font-size: small;
+  }
+  figcaption{
+      font-size: small;
+  }
+  .main-container{
+    
+    size-adjust: auto;
+  }
+  img[alt]{
+  
+    margin-top: 5rem;
+    margin-left: 1rem;
+    height: 130px;
+    width: 130px;
+    
+    
+}
+.item-fell {
+  padding: 0.1rem;
+  font-size: 10px;
+
+}
+.add-item{
+ font-size: 12px;
+  display: flex;
+width: 300px;
+ 
+  background-color: white;
+  
+}
+.fa-solid{
+  font-size: 13px;
+  padding: 1rem;
+  border-radius: 4rem;
+  
+}
+#txtbox {
+  font-size: 13pt;
+  height: 38px;
+  width : 280px;
+  border: 1px solid black;
+  padding: 0.1rem;
+}
+.button2{
+  padding: 10px 10px;
+}
+
+.main-container{
+  width: 340px;
+    display: flex;
+    flex-wrap: nowrap;
+    /* position: absolute; */
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    
+    top: 6rem;
+    right: 40%;
+    /* padding: 1rem 0; */
+    padding:1rem auto;
+    
+    border-radius: 2rem;
+  /* margin-left: auto; */
+    border: 1px solid white;
+    background-color: aliceblue;
+    opacity: 0.8;
+    
+}
+}
